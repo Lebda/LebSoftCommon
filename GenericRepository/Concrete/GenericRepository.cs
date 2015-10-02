@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
+using System.Threading.Tasks;
 using GenericRepository.Abstract;
 
 namespace GenericRepository.Concrete
@@ -27,6 +28,10 @@ namespace GenericRepository.Concrete
         public IQueryable<TEntity> DataQueryable()
         {
             return m_table;
+        }
+        public async Task<IEnumerable<TEntity>> SelectAllAsync()
+        {
+            return await m_table.ToListAsync();
         }
         public IEnumerable<TEntity> SelectAll()
         {

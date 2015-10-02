@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace GenericRepository.Abstract
 {
@@ -8,6 +9,7 @@ namespace GenericRepository.Abstract
     {
         IQueryable<TEntity> DataQueryable();
         IEnumerable<TEntity> DataEnumerable();
+        Task<IEnumerable<TEntity>> SelectAllAsync();
         IEnumerable<TEntity> SelectAll();
         TEntity SelectByID(object id);
         void Insert4ID(TEntity obj, Func<TEntity, int> getter, Action<TEntity, int> setter);
