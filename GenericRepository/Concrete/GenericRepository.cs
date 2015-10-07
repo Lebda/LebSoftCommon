@@ -17,7 +17,7 @@ namespace GenericRepository.Concrete
 
         #region MEMBERS
         private readonly DbContext m_db;
-        private readonly DbSet<TEntity> m_table;
+        private readonly IDbSet<TEntity> m_table;
         #endregion
 
         #region INTERFACE
