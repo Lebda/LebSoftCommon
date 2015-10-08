@@ -17,6 +17,7 @@ namespace GenericRepository.Abstract
         void Update(TEntity obj);
         void Delete(object id);
         void SaveChanges();
+        Task<int> SaveChangesAsync();
         void Dispose();
     }
 }

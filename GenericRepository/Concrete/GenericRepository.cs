@@ -66,6 +66,10 @@ namespace GenericRepository.Concrete
         {
             m_db.SaveChanges();
         }
+        public async Task<int> SaveChangesAsync()
+        {
+            return await m_db.SaveChangesAsync();
+        }
         public void Dispose()
         {
             m_db.Dispose();
