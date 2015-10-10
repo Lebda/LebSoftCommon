@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericRepository", "Generi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonLibrary", "CommonLibrary\CommonLibrary.csproj", "{5AC5D78B-BEBF-46C2-A2EC-C7B4E811E0CF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{3A13BDC6-D450-401B-864F-A69970616EED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientCommon", "ClientCommon\ClientCommon.csproj", "{3536BAB9-DE01-489F-AD8A-38628B0E25CB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,8 +37,15 @@ Global
 		{5AC5D78B-BEBF-46C2-A2EC-C7B4E811E0CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5AC5D78B-BEBF-46C2-A2EC-C7B4E811E0CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5AC5D78B-BEBF-46C2-A2EC-C7B4E811E0CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3536BAB9-DE01-489F-AD8A-38628B0E25CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3536BAB9-DE01-489F-AD8A-38628B0E25CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3536BAB9-DE01-489F-AD8A-38628B0E25CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3536BAB9-DE01-489F-AD8A-38628B0E25CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3536BAB9-DE01-489F-AD8A-38628B0E25CB} = {3A13BDC6-D450-401B-864F-A69970616EED}
 	EndGlobalSection
 EndGlobal
